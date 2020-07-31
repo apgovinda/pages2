@@ -414,7 +414,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: adityapratapbhuyan/pages
+          repository: apgovinda/pages
           tags: repo
   deploy-image-to-pks:
     needs: build-artifact
@@ -609,7 +609,7 @@ spec:
       - name: log-volume
         emptyDir: {}
       containers:
-      - image: adityapratapbhuyan/pages:logging
+      - image: apgovinda/pages:logging
         imagePullPolicy: Always
         name: pages
         ports:
